@@ -21,6 +21,7 @@ const SignInForm = () => {
   const signInWithGoogle = async () => {
     const {user} = await signInWithGooglePopup();
     await createUserDocumentFromAuth(user);
+    alert('Succes, you signed in with Google.');
   };
 
   const handleSubmit = async (event) => {
@@ -32,6 +33,7 @@ const SignInForm = () => {
         password
       );
       resetFormFields();
+      alert('Succes, you signed in.');
 
     } catch(error) {
       switch(error.code) {
@@ -40,6 +42,9 @@ const SignInForm = () => {
           break
         case 'auth/user-not-found' :
           alert('No user associated with this email')
+          break;
+        case 'auth/invalid-credential' :
+          alert('Wrong username or wrong password')
           break;
         default:
           console.log(error);
