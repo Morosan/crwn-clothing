@@ -4,33 +4,39 @@ import './directory.styles.scss';
 const categories = [
     {
       id: 1,
-      title: 'Hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-      route: 'shop/hats'
+      title: 'Action Games',
+      imageUrl: 'https://i.ibb.co/rpjqx3F/Cyberpunk-2077.jpg',
+      route: 'shop/action%20games'
     },
     {
       id: 2,
-      title: 'Jackets',
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-      route: 'shop/jackets'
+      title: 'Adventure Games',
+      imageUrl: 'https://i.ibb.co/c8nwwqq/The-Witcher-3-Wild-Hunt.jpg',
+      route: 'shop/adventure%20games'
     },
     {
       id: 3,
-      title: 'Sneakers',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-      route: 'shop/sneakers'
+      title: 'Strategy Games',
+      imageUrl: 'https://i.ibb.co/zX3K2Jv/Sid-Meier-s-Civilization-VI.jpg',
+      route: 'shop/strategy%20games'
     },
     {
       id: 4,
-      title: 'Womens',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      route: 'shop/womens'
+      title: 'Role-Playing',
+      imageUrl: 'https://i.ibb.co/S3qzcb2/Baldur-s-Gate-3.jpg',
+      route: 'shop/role-playing%20games'
     },
     {
       id: 5,
-      title: 'Mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      route: 'shop/mens'
+      title: 'Simulation Games',
+      imageUrl: 'https://i.ibb.co/HzJJF8Y/Euro-Truck-Simulator-2.jpg',
+      route: 'shop/simulation%20games'
+    },
+    {
+      id: 6,
+      title: 'Racing Games',
+      imageUrl: 'https://i.ibb.co/KWr1stP/Need-for-Speed-Heat.jpg',
+      route: 'shop/racing%20games'
     }
 ];
 
