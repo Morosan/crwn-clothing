@@ -1,0 +1,10 @@
+.slider-container {
+  padding: 40px 0;
+  
+  .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+}
