@@ -22,6 +22,7 @@ const Navigation = () => {
       <nav className="navigation">
         <Link className="logo-container" to='/'>
           <Logo className="logo" />
+          <span className="logo-text">React Games</span>
         </Link>
         <ul className="nav-links-container">
           <li>
