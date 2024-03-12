@@ -5,7 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 500px;
+    max-height: 600px;
+    padding: 0 20px;
 
     > div {
       width: 100%;
@@ -27,11 +28,11 @@
   }
 
   .slick-prev {
-    left: 20px;
+    left: -10px;
   }
 
   .slick-next {
-    right: 20px;
+    right: -10px;
   }
 
   .slick-dots {
