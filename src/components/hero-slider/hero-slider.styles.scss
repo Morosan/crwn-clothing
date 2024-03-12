@@ -1,0 +1,41 @@
+.slider-container {
+  padding: 40px 10px 60px;
+  
+  .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 600px;
+    padding: 0 20px;
+
+    > div {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    z-index: 9;
+
+    &::before {
+      color: #000;
+    }
+  }
+
+  .slick-prev {
+    left: -10px;
+  }
+
+  .slick-next {
+    right: -10px;
+  }
+
+  .slick-dots {
+    bottom: -40px;
+  }
+}
