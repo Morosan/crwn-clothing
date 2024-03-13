@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./hero-slider.styles.scss";
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 import { useDispatch, useSelector } from 'react-redux';  
-import { fetchCategoriesAsync } from "../../store/categories/category.action";
+import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 
 const HeroSlider = () => {
@@ -16,7 +16,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const getCategoriesMap = async () => {
       try {
-        dispatch(fetchCategoriesAsync());
+        dispatch(fetchCategoriesStart());
       } catch (error) {
         console.error('Error fetching categories:', error);
       }
