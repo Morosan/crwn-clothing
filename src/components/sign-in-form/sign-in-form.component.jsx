@@ -3,9 +3,8 @@ import FormInput from "../form-input/form-input.component";
 
 import "./sign-in-form.styles.scss";
 import Button from "../button/button.component";
-import { signInAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 import { useDispatch } from "react-redux";
-import { googleSignInStart } from "../../store/user/user.action";
+import { emailSignInStart, googleSignInStart } from "../../store/user/user.action";
 
 const defaultFormFields = {
   email: '',
@@ -23,17 +22,13 @@ const SignInForm = () => {
 
   const signInWithGoogle = async () => {
     dispatch(googleSignInStart())
-    alert('Succes, you signed in with Google.');
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const { user } = await signInAuthUserWithEmailAndPassword(
-        email, 
-        password
-      );
+      dispatch(emailSignInStart(email, password));
       resetFormFields();
       alert('Succes, you signed in.');
 
