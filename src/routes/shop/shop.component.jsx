@@ -4,7 +4,7 @@ import CategoriesPreview from '../categories-preview/categories-preview.componen
 import Category from '../category/category.component';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchCategoriesAsync } from '../../store/categories/category.action';
+import { fetchCategoriesStart } from '../../store/categories/category.action';
 import { addCollectionAndDocuments } from '../../utils/firebase/firebase.utils';
 import SHOP_DATA from '../../shop-data';
 
@@ -14,7 +14,7 @@ const Shop = () => {
   const dispatch = useDispatch();
   
   useEffect(() => {
-    dispatch(fetchCategoriesAsync());
+    dispatch(fetchCategoriesStart());
   }, []);
 
   // Decoment for DB firebase update and then comment back
