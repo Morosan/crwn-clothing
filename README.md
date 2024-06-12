@@ -1,4 +1,4 @@
-## Demo: https://react-clothing-shop-gray.netlify.app/
+## Demo: https://react-games-shop-gray.netlify.app/
 
 # Getting Started with Create React App
 
